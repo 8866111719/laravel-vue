@@ -24,7 +24,7 @@ return new class extends Migration
             $table->unsignedInteger('best_answer_id')->nullable();
             $table->integer('user_id')->unsigned()->nullable();
             $table->timestamps();
-            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+            // $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
         });
     }
 
